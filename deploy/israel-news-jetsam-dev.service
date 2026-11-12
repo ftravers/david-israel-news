@@ -1,0 +1,25 @@
+[Unit]
+Description=Cloudflare tunnel for israel-news.jetsam.dev
+Requires=israel-news-origin.service
+After=network-online.target israel-news-origin.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/trentoo/.local/bin/cloudflared --no-autoupdate --loglevel info --metrics 127.0.0.1:0 --config /home/trentoo/.config/cloudflared-tunnels/israel-news-jetsam-dev/config.yml tunnel run acc2566b-b04e-4ec1-bfd0-ebefe5c4c0af
+Restart=on-failure
+RestartSec=5s
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=read-only
+ProtectControlGroups=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictRealtime=true
+
+[Install]
+WantedBy=default.target
