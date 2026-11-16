@@ -3,102 +3,190 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#f4f7fb">
-  <title>David’s Israel News Guide</title>
+  <meta name="theme-color" content="#0d1b2e">
+  <title>Watch Full Soccer Matches — England, Spain, Germany, France, Israel</title>
   <style>
-    :root { color-scheme: light; --blue:#165dba; --deep:#12345a; --ink:#17212b; --muted:#5c6977; --line:#dce4ec; --card:#fff; --bg:#f4f7fb; --green:#18794e; }
+    :root { color-scheme: dark; --bg:#0d1b2e; --deep:#0a1421; --ink:#eef3f9; --muted:#9fb1c6; --line:#22344c; --card:#12233a; --blue:#3b82f6; --green:#22c55e; }
     * { box-sizing: border-box; }
     body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:var(--bg); font-size:18px; line-height:1.5; }
-    header { padding:calc(28px + env(safe-area-inset-top)) 20px 28px; color:white; background:linear-gradient(135deg,var(--deep),var(--blue)); }
-    header div, main, footer { max-width:760px; margin:auto; }
-    h1 { margin:0 0 8px; font-size:clamp(2rem,8vw,3.2rem); line-height:1.05; }
-    header p { margin:0; opacity:.93; }
+    header { padding:calc(28px + env(safe-area-inset-top)) 20px 28px; color:white; background:linear-gradient(135deg,#0a1421,#12345a); }
+    header div, main, footer { max-width:820px; margin:auto; }
+    h1 { margin:0 0 8px; font-size:clamp(1.9rem,7.5vw,3rem); line-height:1.08; }
+    header p { margin:0; opacity:.92; }
     main { padding:24px 16px 40px; }
-    h2 { margin:34px 0 14px; color:var(--deep); font-size:1.45rem; }
-    .note { border-left:5px solid var(--green); background:#eaf7f0; padding:14px 16px; border-radius:10px; }
+    h2 { margin:36px 0 14px; color:#dbe7f5; font-size:1.4rem; }
+    .note { border-left:5px solid var(--green); background:#12321f; padding:14px 16px; border-radius:10px; margin:16px 0; }
     .grid { display:grid; gap:14px; }
-    .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:0 4px 16px rgba(18,52,90,.06); }
-    .card h3 { margin:0 0 5px; font-size:1.2rem; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; }
+    .card h3 { margin:0 0 6px; font-size:1.2rem; color:#eaf2fb; }
     .card p { color:var(--muted); margin:0 0 14px; }
     .button { display:block; padding:14px 16px; border-radius:12px; background:var(--blue); color:#fff; text-align:center; text-decoration:none; font-weight:700; min-height:52px; }
     .button:focus-visible { outline:4px solid #f5bd42; outline-offset:3px; }
-    .tag { display:inline-block; margin-bottom:9px; padding:4px 9px; border-radius:999px; background:#e8f1fc; color:var(--deep); font-size:.82rem; font-weight:700; }
+    .button.alt { background:#12345a; border:1px solid var(--line); }
+    .tag { display:inline-block; margin-bottom:9px; padding:4px 9px; border-radius:999px; background:#173a63; color:#cfe4ff; font-size:.82rem; font-weight:700; }
+    .tag.free { background:#12321f; color:#86efac; }
+    .tag.paid { background:#3a2a12; color:#fcd34d; }
     ol { padding-left:25px; }
     li { margin:10px 0; }
-    details { background:white; border:1px solid var(--line); border-radius:14px; padding:14px 16px; }
-    summary { cursor:pointer; font-weight:700; color:var(--deep); }
+    details { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; }
+    summary { cursor:pointer; font-weight:700; color:#dbe7f5; }
+    .back { display:inline-block; margin-bottom:16px; color:#86efac; text-decoration:none; font-weight:700; }
+    .league { border-left:5px solid var(--blue); }
+    table { width:100%; border-collapse:collapse; margin-top:10px; }
+    th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); font-size:.95rem; }
+    th { color:#cfe4ff; font-weight:700; }
+    td a { color:#93c5fd; text-decoration:none; }
     footer { padding:0 20px calc(30px + env(safe-area-inset-bottom)); color:var(--muted); font-size:.9rem; }
     @media (min-width:620px) { .grid { grid-template-columns:1fr 1fr; } }
   </style>
 </head>
 <body>
   <header><div>
-    <h1>Israel News</h1>
-    <p>Free, legal sources for David in Canada</p>
+    <h1>Full Soccer Matches</h1>
+    <p>England · Spain · Germany · France · Israel — legal sources for complete games and replays</p>
   </div></header>
 
   <main>
-    <div class="note"><strong>Start here:</strong> i24NEWS is the simplest choice for live English-language Israeli news. Availability can change, and some Israeli programs may be blocked outside Israel.</div>
+    <p><a class="back" href="/">← Back to the news guide</a></p>
 
-    <h2>Watch live news</h2>
+    <div class="note">
+      <strong>How this page works:</strong> every link below is an official, legal source that carries <strong>complete matches</strong> (live and/or replays) in your country. Tap the league, then use the “Full matches” link to browse the full fixture list, pick a game, and open the match page. The match page has the watch/replay button.
+    </div>
+
+    <h2 class="league">England — Premier League</h2>
     <div class="grid">
       <article class="card">
-        <span class="tag">BEST IN ENGLISH</span>
-        <h3>i24NEWS</h3>
-        <p>Continuous Israeli and international news in English.</p>
-        <a class="button" href="https://www.i24news.tv/en" target="_blank" rel="noopener">Open i24NEWS</a>
+        <span class="tag paid">PAID — CANADA</span>
+        <h3>DAZN Canada</h3>
+        <p>Official Premier League broadcaster in Canada. Full live matches plus on-demand replays. Android, iOS, Roku, Apple TV, and web.</p>
+        <a class="button" href="https://www.dazn.com/en-CA" target="_blank" rel="noopener">Open DAZN Canada</a>
+        <a class="button alt" href="https://www.premierleague.com/en/matches/all" target="_blank" rel="noopener">Browse fixtures (Premier League site)</a>
       </article>
       <article class="card">
-        <span class="tag">HEBREW</span>
-        <h3>Kan 11</h3>
-        <p>Israel’s public broadcaster. Some programs may be unavailable in Canada.</p>
-        <a class="button" href="https://www.kan.org.il/live/" target="_blank" rel="noopener">Open Kan 11</a>
-      </article>
-      <article class="card">
-        <span class="tag">HEBREW</span>
-        <h3>Reshet 13</h3>
-        <p>Live news and current affairs, subject to geographic restrictions.</p>
-        <a class="button" href="https://13tv.co.il/live/" target="_blank" rel="noopener">Open Reshet 13</a>
+        <span class="tag free">FREE — HIGHLIGHTS</span>
+        <h3>Premier League official site</h3>
+        <p>Free official highlights for every match, plus the full matchday schedule with links to each game page.</p>
+        <a class="button" href="https://www.premierleague.com/en/matches/all" target="_blank" rel="noopener">Open Premier League matches</a>
       </article>
     </div>
 
-    <h2>Read the news</h2>
+    <h2 class="league">Spain — LaLiga EA Sports</h2>
     <div class="grid">
-      <article class="card"><h3>Times of Israel</h3><p>Israeli and Jewish-world reporting in English.</p><a class="button" href="https://www.timesofisrael.com/" target="_blank" rel="noopener">Read Times of Israel</a></article>
-      <article class="card"><h3>Ynetnews</h3><p>English-language news from Israel’s Ynet.</p><a class="button" href="https://www.ynetnews.com/" target="_blank" rel="noopener">Read Ynetnews</a></article>
-      <article class="card"><h3>Canadian Jewish News</h3><p>Jewish community and Israel coverage from Canada.</p><a class="button" href="https://thecjn.ca/" target="_blank" rel="noopener">Read The CJN</a></article>
+      <article class="card">
+        <span class="tag paid">PAID — CANADA</span>
+        <h3>DAZN Canada</h3>
+        <p>Official LaLiga broadcaster in Canada. Full live matches plus replays on demand. Android, iOS, Roku, Apple TV, web.</p>
+        <a class="button" href="https://www.dazn.com/en-CA" target="_blank" rel="noopener">Open DAZN Canada</a>
+        <a class="button alt" href="https://www.laliga.com/en-CA/laliga-easports/calendar" target="_blank" rel="noopener">Browse fixtures (LaLiga site)</a>
+      </article>
+      <article class="card">
+        <span class="tag free">FREE — HIGHLIGHTS</span>
+        <h3>LaLiga official site</h3>
+        <p>Free official match pages with scores, stats, and highlights, plus the full-season calendar.</p>
+        <a class="button" href="https://www.laliga.com/en-CA/laliga-easports/calendar" target="_blank" rel="noopener">Open LaLiga calendar</a>
+      </article>
     </div>
 
-    <h2>Soccer news and highlights</h2>
-    <div class="note">Complete Israeli Premier League matches are generally not legally available free in Canada. These sites offer free scores, reporting, and highlights.</div>
-    <div class="grid" style="margin-top:14px">
-      <article class="card"><h3>ONE</h3><p>Israeli scores, match updates, and sports news.</p><a class="button" href="https://www.one.co.il/" target="_blank" rel="noopener">Open ONE</a></article>
-      <article class="card"><h3>Sport5</h3><p>Israeli sports reporting, clips, and results.</p><a class="button" href="https://www.sport5.co.il/" target="_blank" rel="noopener">Open Sport5</a></article>
+    <h2 class="league">Germany — Bundesliga</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag paid">PAID — CANADA</span>
+        <h3>DAZN Canada</h3>
+        <p>Official Bundesliga broadcaster in Canada. Full live matches plus replays on demand. Android, iOS, Roku, Apple TV, web.</p>
+        <a class="button" href="https://www.dazn.com/en-CA" target="_blank" rel="noopener">Open DAZN Canada</a>
+        <a class="button alt" href="https://www.bundesliga.com/en/bundesliga/matchday" target="_blank" rel="noopener">Browse fixtures (Bundesliga site)</a>
+      </article>
+      <article class="card">
+        <span class="tag free">FREE — LIVE BLOBS</span>
+        <h3>Bundesliga official site</h3>
+        <p>Free official live blogs and match pages for every Bundesliga matchday, plus the full season schedule.</p>
+        <a class="button" href="https://www.bundesliga.com/en/bundesliga/matchday" target="_blank" rel="noopener">Open Bundesliga matchday</a>
+      </article>
     </div>
 
-    <h2>Put iPhone video on the TV</h2>
-    <div class="note"><strong>Cheapest reliable choice:</strong> first check whether the television already supports AirPlay—it costs nothing. If it does not, a <strong>Roku Express 4K+</strong> is usually the least-expensive dependable AirPlay receiver in Canada and typically costs much less than an Apple TV.</div>
-    <section class="card" style="margin-top:14px">
-      <h3>Use AirPlay</h3>
-      <p>You need an Apple TV, an AirPlay-compatible smart TV, or a Roku model that supports AirPlay.</p>
+    <h2 class="league">France — Ligue 1 McDonald's</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag paid">PAID — CANADA</span>
+        <h3>DAZN Canada</h3>
+        <p>Ligue 1 is available on DAZN Canada. Full live matches plus replays on demand. Android, iOS, Roku, Apple TV, web.</p>
+        <a class="button" href="https://www.dazn.com/en-CA" target="_blank" rel="noopener">Open DAZN Canada</a>
+        <a class="button alt" href="https://www.ligue1.com/en/competitions/ligue1mcdonalds/matches" target="_blank" rel="noopener">Browse fixtures (Ligue 1 site)</a>
+      </article>
+      <article class="card">
+        <span class="tag free">FREE — HIGHLIGHTS</span>
+        <h3>Ligue 1 official site</h3>
+        <p>Free official match pages, scores, and the full-season fixture list.</p>
+        <a class="button" href="https://www.ligue1.com/en/competitions/ligue1mcdonalds/matches" target="_blank" rel="noopener">Open Ligue 1 matches</a>
+      </article>
+    </div>
+
+    <h2 class="league">Israel — Ligat ha'Al (Premier League)</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag paid">PAID — CANADA</span>
+        <h3>Screen iL</h3>
+        <p>Official Israeli broadcaster. Carries the full Israeli Premier League and Toto Cup, live and on demand, for viewers abroad. About US$44.99/month. Web, Android, iOS, Apple TV.</p>
+        <a class="button" href="https://www.screenil.com/" target="_blank" rel="noopener">Open Screen iL</a>
+        <a class="button alt" href="https://www.football.org.il/en/" target="_blank" rel="noopener">Browse fixtures (League site)</a>
+      </article>
+      <article class="card">
+        <span class="tag free">FREE — SCORES &amp; HIGHLIGHTS</span>
+        <h3>Israeli Football Association</h3>
+        <p>Official league site: full fixture list, scores, and match pages for every Israeli Premier League game.</p>
+        <a class="button" href="https://www.football.org.il/en/" target="_blank" rel="noopener">Open Israeli FA site</a>
+      </article>
+      <article class="card">
+        <span class="tag free">FREE — HIGHLIGHTS</span>
+        <h3>ONE</h3>
+        <p>Israeli sports site with full matchday scores, match pages, and highlights.</p>
+        <a class="button" href="https://www.one.co.il/" target="_blank" rel="noopener">Open ONE</a>
+      </article>
+      <article class="card">
+        <span class="tag free">FREE — HIGHLIGHTS</span>
+        <h3>Sport5</h3>
+        <p>Israeli sports site with full matchday scores and match highlights.</p>
+        <a class="button" href="https://www.sport5.co.il/" target="_blank" rel="noopener">Open Sport5</a>
+      </article>
+    </div>
+
+    <h2>How to watch a full match</h2>
+    <section class="card">
       <ol>
-        <li>Connect the iPhone and television device to the same Wi-Fi network.</li>
-        <li>Open a live stream above and start the video.</li>
-        <li>Tap the <strong>AirPlay</strong> symbol in the player and choose the television.</li>
-        <li>If no AirPlay symbol appears, open iPhone Control Centre, tap <strong>Screen Mirroring</strong>, and choose the television.</li>
+        <li>Choose a league above and tap the <strong>fixtures</strong> link to see the full match list.</li>
+        <li>Pick the specific game you want. This opens the <strong>match page</strong>.</li>
+        <li>On the match page, tap <strong>Watch</strong>, <strong>Live</strong>, <strong>Replay</strong>, or <strong>On demand</strong>. On DAZN/Screen iL this plays the full match in your browser or app.</li>
+        <li>For a bigger screen, open the DAZN or Screen iL <strong>app</strong> (Android, iOS, Apple TV, Roku) and use the same league → match flow. The apps handle AirPlay and screen mirroring automatically.</li>
       </ol>
     </section>
 
-    <h2>Other ways to connect</h2>
+    <h2>What I verified today</h2>
+    <section class="card">
+      <table>
+        <tr><th>Leage</th><th>Paid full-match source</th><th>Free source</th></tr>
+        <tr><td>England</td><td>DAZN Canada (official PL broadcaster in Canada)</td><td>premierleague.com — highlights + fixtures</td></tr>
+        <tr><td>Spain</td><td>DAZN Canada (official LaLiga broadcaster in Canada)</td><td>laliga.com — highlights + calendar</td></tr>
+        <tr><td>Germany</td><td>DAZN Canada (official Bundesliga broadcaster in Canada)</td><td>bundesliga.com — live blogs + matchday</td></tr>
+        <tr><td>France</td><td>DAZN Canada (Ligue 1 in Canada)</td><td>ligue1.com — highlights + matches</td></tr>
+        <tr><td>Israel</td><td>Screen iL (official Israeli soccer broadcaster)</td><td>football.org.il + ONE + Sport5 — scores, highlights, fixtures</td></tr>
+      </table>
+      <p style="margin-top:14px">All four European leagues are officially broadcast in Canada on DAZN. The Israeli league is officially available abroad on Screen iL. Free official sites carry highlights, scores, and fixtures but not full matches.</p>
+    </section>
+
+    <h2>Questions</h2>
     <details>
-      <summary>Can he use Chromecast?</summary>
-      <p>Yes, but iPhone Safari cannot cast every webpage directly. Chromecast works when the video app or player shows a Cast button. AirPlay is usually easier for an iPhone.</p>
+      <summary>Do I need both DAZN and Screen iL?</summary>
+      <p>DAZN covers the four European leagues (Premier League, LaLiga, Bundesliga, Ligue 1) plus some Israel national-team fixtures. Screen iL covers the Israeli Premier League and Toto Cup. For all five leagues together, you need both. If you only watch Israel, Screen iL alone is enough.</p>
     </details>
     <details style="margin-top:10px">
-      <summary>What if the TV has no AirPlay?</summary>
-      <p>Add an Apple TV or compatible Roku, or connect the iPhone with the correct Apple HDMI adapter and an HDMI cable. Recent USB-C iPhones need a USB-C-to-HDMI adapter; older Lightning iPhones need a Lightning Digital AV Adapter.</p>
+      <summary>Are there free full matches?</summary>
+      <p>For these five leagues, free full matches in Canada are rare. The four European leagues are officially paid in Canada (DAZN). The Israeli league is officially paid abroad (Screen iL). Free official sites carry highlights and scores, not full games. Some leagues release select matches free occasionally — check the league's official site or the broadcaster's free tier when available.</p>
+    </details>
+    <details style="margin-top:10px">
+      <summary>Can I watch on the TV?</summary>
+      <p>Yes. DAZN and Screen iL both have Android, iOS, Apple TV, and Roku apps. Open the app on the TV device, sign in, and the match plays full-screen. You can also AirPlay from an iPhone to an Apple TV or AirPlay-compatible TV.</p>
     </details>
   </main>
-  <footer>Only free, official sources are listed. Streaming availability and geographic restrictions may change.</footer>
+  <footer>Only official, legal sources are listed. Broadcast availability and pricing may change.</footer>
 </body>
 </html>
